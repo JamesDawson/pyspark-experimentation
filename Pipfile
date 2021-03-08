@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyspark = "*"
+jupyter = "*"
+test-data-gen = {git = "https://github.com/endjin/test-data-gen"}
+faker = "*"
+pandas = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
