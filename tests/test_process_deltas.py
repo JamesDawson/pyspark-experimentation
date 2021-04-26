@@ -1,22 +1,23 @@
 from pyspark.sql import SparkSession
 from datetime import datetime
 import pandas as pd
-from data_loading import ProcessDeltas
+from modules import ProcessDeltas
 
 spark = (SparkSession.builder.appName('Test').getOrCreate())
 
+
 def test_load_latest_data():
-    
+
     # given
-    data = {'key_1': [1, 2, 3, 1, 2, 1], 
+    data = {'key_1': [1, 2, 3, 1, 2, 1],
             'Data': [10, 20, 30, 11, 21, 12],
             'ExtractDate': [
-                datetime(2021,3,1),
-                datetime(2021,3,1),
-                datetime(2021,3,1),
-                datetime(2021,3,2),
-                datetime(2021,3,3),
-                datetime(2021,3,4)],
+                datetime(2021, 3, 1),
+                datetime(2021, 3, 1),
+                datetime(2021, 3, 1),
+                datetime(2021, 3, 2),
+                datetime(2021, 3, 3),
+                datetime(2021, 3, 4)],
             'DeleteFlag': [0, 0, 0, 0, 0, 1]
             }
 

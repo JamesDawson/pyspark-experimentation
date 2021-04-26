@@ -5,11 +5,13 @@ name = "pypi"
 
 [packages]
 pyspark = "*"
-pandas = "*"
 
 [dev-packages]
 ipykernel = "*"
 pytest = "*"
+pipenv-setup = "*"
+flake8 = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.8"
