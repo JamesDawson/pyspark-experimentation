@@ -1,13 +1,10 @@
-#%%
 from pyspark.sql import SparkSession
 from datetime import datetime
 import pandas as pd
 from data_loading import ProcessDeltas
 
-# %%
 spark = (SparkSession.builder.appName('Test').getOrCreate())
 
-# %%
 def test_load_latest_data():
     
     # given

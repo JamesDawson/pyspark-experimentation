@@ -12,8 +12,8 @@ You need to have the following installed to run this notebook:
 
 You also need to set up two environment variables:
 
-- `SPARK_HOME`
-- `HADOOP_HOME`
+- `SPARK_HOME` for example `set SPARK_HOME=C:\spark\spark-3.1.1-bin-hadoop2.7`
+- `HADOOP_HOME` for example `set HADOOP_HOME=C:\spark\spark-3.1.1-bin-hadoop2.7\hadoop`
 
 More detailed instructions about all of the above, are provided in the following article:
 
@@ -23,3 +23,14 @@ https://towardsdatascience.com/installing-apache-pyspark-on-windows-10-f5f0c506b
 
 `set PYSPARK_PYTHON=python`
 
+## Running this project locally
+
+Clone the repository locally.
+
+At the command prompt, from the root of the project, initialise the Python virtual environment and install dependencies:
+
+`pipenv install`
+
+To run unit tests:
+
+`pipenv run pytest`
